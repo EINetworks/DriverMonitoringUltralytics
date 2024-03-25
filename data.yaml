@@ -1,0 +1,25 @@
+path: /mnt/ssd2/Codes/DriverMonitoringUltralytics/data
+train: 
+    - headphone_images/images
+    - nitinNeg/images
+    - headphonesGTPos/images
+    - headphonesGT_nitinv2/images
+    - smokingsGT/images
+    - smokingv31/train/images
+    - smokingv1/train/images
+val: 
+    - smokingv1/train/images
+    - headphonesGT_nitinv2/images
+test: 
+    - smokingv1/train/images
+    - headphonesGT_nitinv2/images
+
+nc: 2
+names: ['Headphones', 'Smoking']
+
+roboflow:
+  workspace: roboflow-universe-projects
+  project: license-plate-recognition-rxg4e
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e/dataset/3
